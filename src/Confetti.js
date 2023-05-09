@@ -155,9 +155,32 @@ const Confetti = () => {
                         type: [
                             "square",
                             "triangle",
-                            "polygon"
+                            "polygon",
+                            "circle",
+                            "character"
                         ],
                         options: {
+                            character: [
+                               {fill: true},
+                               {font: "Verdana"},
+                               {style: ""},
+                               {weight: 400},
+                                {particles: {
+                               size: {
+                                value: 8
+                                }
+                            }}
+                            ],
+                            value: [
+                                "💩",
+                                "🤡",
+                                "🍀",
+                                "🍙",
+                                "🦄",
+                                "⭐️"
+
+
+                            ],
                             polygon: [
                                 {
                                     sides: 5
@@ -165,6 +188,7 @@ const Confetti = () => {
                                 {
                                     sides: 6
                                 }
+
                             ]
                         }
                     }
